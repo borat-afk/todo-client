@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                     // Версія ECMAScript, до якої компілювати код
+    "module": "ESNext",                     // Формат модулів, який буде використовуватись (ES модулі)
+    "strict": true,                         // Включити строгий режим перевірки типів
+    "forceConsistentCasingInFileNames": true,// Перевіряє на відповідність регістру імен файлів
+    "resolveJsonModule": true,              // Дозволяє імпортувати файли JSON як модулі
+    "baseUrl": "./src",                     // Базовий шлях для відносних модульних імпортів
+    "paths": {
+      "@components/*": ["components/*"],    // Приклад аліасу для компонентів (додайте більше, якщо потрібно)
+      "@utils/*": ["utils/*"]                // Приклад аліасу для утиліт (додайте більше, якщо потрібно)
+    },
+    "lib": ["DOM", "ESNext"],               // Підключені бібліотеки (DOM для роботи з DOM-елементами)
+    "outDir": "dist",                       // Вихідна директорія для згенерованих JS-файлів
+    "declaration": true,                    // Генерувати .d.ts файли для типів
+    "strictNullChecks": true,               // Дотримуватись строго перевірки на null і undefined
+    "moduleResolution": "node",             // Резолюція модулів (використовувати node для пакетів з npm)
+    "allowSyntheticDefaultImports": true,   // Дозволяє імпортувати файли з default експортом як namespace
+    "esModuleInterop": true,                // Дозволяє імпортувати файли CommonJS як ES модулі
+    "skipLibCheck": true,                   // Пропускати перевірку типів взагалі зовнішніх бібліотек
+    "noEmitOnError": true,                  // Не генерувати JS-файли, якщо є помилки в коді
+    "noUnusedLocals": true,                 // Попереджати про не використані локальні змінні
+    "noUnusedParameters": true              // Попереджати про не використані параметри функцій
+  },
+  "exclude": [
+    "node_modules",                        // Виключити з компіляції файли з папки node_modules
+    "dist"                                 // Виключити з компіляції файли з папки dist (якщо використовуєте)
+  ],
+  "include": [
+    "src/**/*",
+    "styles/**/*.scss"
+  ]                  // Включити в компіляцію файли з папки src
+}

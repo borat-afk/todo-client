@@ -1,0 +1,28 @@
+{
+  "name": "todo-client",
+  "version": "1.0.0",
+  "description": "Client TODO app",
+  "main": "index.js",
+  "scripts": {
+    "build:scss": "sass styles/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borat-afk/todo-client.git"
+  },
+  "author": "Vitalii Chernenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borat-afk/todo-client/issues"
+  },
+  "homepage": "https://github.com/borat-afk/todo-client#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "sass": "^1.64.1",
+    "ts-node": "^10.9.1"
+  }
+}
